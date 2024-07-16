@@ -43,15 +43,18 @@
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Hruday Tej Akkaladevi</h1>
-        <p class="section__text__p2">Software Developer | Engineer</p>
+        <p class="section__text__p2">Software Developer - Engineer</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
+            onclick="window.open('./assets/Hruday_Tej_Akkaladevi_Resume.pdf')"
           >
             Download CV
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          <button
+            class="btn btn-color-1 contact-btn"
+            onclick="smoothScroll('contact')"
+          >
             Contact Info
           </button>
         </div>
@@ -75,7 +78,8 @@
         </div>
       </div>
     </section>
-    <section id="work-experience" class="section">
+    <section id="experience" class="section">
+      <p class="section__text__p1">Dive Into My</p>
       <h1 class="title">Work Experience</h1>
       <div class="experience-details-container">
         <div class="timeline">
@@ -87,11 +91,21 @@
               <p>i-Heal (Intelligent Health Lab)</p>
               <ul class="collapsible-content">
                 <li>
-                  Architecting a robust Backend AI Data Pipeline Solution...
+                  Architecting a robust Backend AI Data Pipeline Solution
+                  utilizing MongoDB, PostgreSQL hosted on Docker/Apptainer as a
+                  consolidated storage solution for over 30GB of highly
+                  unstructured EHR data. Enhanced the querying engine’s speed by
+                  more than 20% and improving retrieval accuracy by 15% for
+                  retrieval based NLP models that perform Human Text to SQL
+                  query generation.
                 </li>
                 <li>
                   Fine-tuned and constructed Retrieval-Augmented Generation
-                  (RAG) systems...
+                  (RAG) systems for healthcare domain chatbots to enhance the
+                  capabilities of current cutting-edge Large Language Models
+                  (LLMs) like Llama-2 and GPT-4 by 30% (measured by BLEU, LSA,
+                  Perplexity, BERTScore) in the domain. Thus, surpassing the
+                  current general-purpose LLMs (Llama, GPT) and RoBERTa.
                 </li>
               </ul>
               <button class="toggle-btn">See more</button>
@@ -105,23 +119,75 @@
               <p>J.P. Morgan Chase</p>
               <ul class="collapsible-content">
                 <li>
-                  Led the complete SDLC of a high-impact Big Data Solution...
+                  Led the complete SDLC of a high-impact Big Data Solution that
+                  ensures secure interaction with Amazon EMR clusters and Big
+                  Data Engineers, enabling seamless submission and execution of
+                  Big Data jobs, improving the operational efficiency by 90%.
                 </li>
                 <li>
-                  Engineered critical features, including User Authentication...
+                  Engineered critical features, including User Authentication,
+                  Lineage, and REST API endpoints for EMR cluster management
+                  tasks such as creation, repaving, Spark job execution, and
+                  Livy sessions, by developing a Terraform codebase to deploy
+                  AWS Lambda functions and other services, leading to a 70%
+                  improvement in system reliability and a 40% reduction in issue
+                  resolution time.
                 </li>
                 <li>
                   Integrated Jenkins with the EMR Controller using Groovy
-                  scripts...
+                  scripts and SNS/SQS mechanisms to provide customers without
+                  IDAuth tokens additional methods for interacting with EMR
+                  clusters. This resulted in a 10% increase in customer
+                  engagement.
                 </li>
                 <li>
-                  Developed Grafana dashboards and housekeeping utilities...
+                  Developed Grafana dashboards and housekeeping utilities,
+                  monitoring various actions and resources consumed by AWS
+                  services to help track, oversee unutilized idle resources
+                  thereby potentially reducing the clients' costs on EMR
+                  infrastructure by up to $100,000.
                 </li>
                 <li>
-                  Provided comprehensive support for enabling the product...
+                  Provided comprehensive support for enabling the product across
+                  multiple AWS regions by configuring terraform codebase, S3,
+                  lambda functions, Jenkins deployments, aiming to improve
+                  availability, which contributed to a 20% increase in customer
+                  count.
                 </li>
                 <li>
-                  As the Scrum Master and Release Manager, administered...
+                  As the Scrum Master and Release Manager, administered the
+                  implementation of a Continuous Integration and Continuous
+                  Delivery model in a robust Agile setting with blue-green
+                  deployments, resulting in the accelerated delivery of 30
+                  features at a 10% increased speed making the process of
+                  migration between different versions easier for customers.
+                </li>
+              </ul>
+              <button class="toggle-btn">See more</button>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">April, 2022 - May, 2023</div>
+              <h3>Full Stack Developer</h3>
+              <p>Youngistaan Foundation - JP Morgan Chase</p>
+              <ul class="collapsible-content">
+                <li>
+                  Conceptualized and designed a Full Stack Mobile Application
+                  utilizing Flutter for the front-end AWS lambdas for the
+                  RESTful APIs and DynamoDB for the data storage. Achieved a
+                  notable 55% enhancement in the User Experience and Onboarding
+                  process.
+                </li>
+                <li>
+                  Executed different upgrades and features, like boosting
+                  Security, Database Model Designs, UI upgrades, and features
+                  like Geo- tracking, Notifications, and Google Maps Integration
+                  for the mobile application thereby automating 90% of the
+                  manual tasks and reducing the cost to the company by almost
+                  95%
                 </li>
               </ul>
               <button class="toggle-btn">See more</button>
@@ -205,10 +271,10 @@
       />
     </section>
 
-    <section id="about">
+    <!-- <section id="about"> -->
       <!-- <p class="section__text__p1">Get To Know More</p> -->
       <!-- <h1 class="title">About Me</h1> -->
-      <div class="section-container">
+      <!-- <div class="section-container"> -->
         <!-- <div class="section__pic-container">
           <img
             src="./assets/about-pic.png"
@@ -216,9 +282,9 @@
             class="about-pic"
           />
         </div> -->
-        <div class="about-details-container">
+        <!-- <div class="about-details-container"> -->
           <section id="education" class="section">
-            <!-- <p class="section__text__p1">My Academic</p> -->
+            <p class="section__text__p1">My Academic</p>
             <h1 class="title">Education</h1>
             <br />
             <div class="experience-details-container">
@@ -261,7 +327,7 @@
             />
           </section>
           <br />
-          <div class="text-container">
+          <!-- <div class="text-container">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
               reprehenderit et laborum, rem, dolore eum quod voluptate
@@ -270,7 +336,7 @@
               Eligendi illum libero dolorum cum laboriosam corrupti quidem,
               reiciendis ea magnam? Nulla, impedit fuga!
             </p>
-          </div>
+          </div> -->
         </div>
       </div>
       <!-- <p>fjfjf</p> -->
@@ -288,78 +354,96 @@
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container color-container">
-            <div class="article-container">
+            <!-- <div class="article-container">
               <img
                 src="./assets/project-1.png"
                 alt="Project 1"
                 class="project-img"
               />
-            </div>
+            </div> -->
             <h2 class="experience-sub-title project-title">
               Conv-AI Medical Chatbot
             </h2>
+            <p style="text-align: justify">
+              A conversational AI chat-bot aiming to provide diagnoses for less
+              priviledged society developed by Finetuning LLM's such as Llama,
+              GPT.
+            </p>
+            <br />
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/hruday-tej/Conversational-AI-Medical-Chatbot-Llama-Finetuned-RAG'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/hruday-tej/Conversational-AI-Medical-Chatbot-Llama-Finetuned-RAG'"
               >
                 Live Demo
               </button>
             </div>
           </div>
           <div class="details-container color-container">
-            <div class="article-container">
+            <!-- <div class="article-container">
               <img
                 src="./assets/project-2.png"
                 alt="Project 2"
                 class="project-img"
               />
-            </div>
+            </div> -->
             <h2 class="experience-sub-title project-title">
               Clinical Text Summarizer
             </h2>
+            <p style="text-align: justify">
+              A Large Language Model Fine-tuned to perform the task of Text
+              Summarization of clinical history of patients, contrasted by the
+              efficiencies of LSTM and BERT.
+            </p>
+            <br />
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/hruday-tej/Clinical-Notes-Summarizer-RAG-FineTune'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/hruday-tej/Clinical-Notes-Summarizer-RAG-FineTune'"
               >
                 Live Demo
               </button>
             </div>
           </div>
           <div class="details-container color-container">
-            <div class="article-container">
+            <!-- <div class="article-container">
               <img
                 src="./assets/project-3.png"
                 alt="Project 3"
                 class="project-img"
               />
-            </div>
+            </div> -->
             <h2 class="experience-sub-title project-title">
               Single Image Super Resolution
             </h2>
+            <p style="text-align: justify">
+              A GAN Model developed to enhance the quality of degraded images by
+              an upscaling factor of 4, contrasted by the performance of CNN and
+              image interpolation.
+            </p>
+            <br />
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/hruday-tej/Super-Resolution-GAN'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/hruday-tej/Super-Resolution-GAN'"
               >
                 Live Demo
               </button>
@@ -385,7 +469,9 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+          <p>
+            <a href="mailto:hruday.acad@gmail.com">hruday.acad@gmail.com</a>
+          </p>
         </div>
         <div class="contact-info-container">
           <img
@@ -401,10 +487,39 @@
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a
+                href="#experience"
+                onclick="smoothScroll('experience'); return false;"
+                >Experience</a
+              >
+            </li>
+            <li>
+              <a href="#skills" onclick="smoothScroll('skills'); return false;"
+                >Skills</a
+              >
+            </li>
+            <li>
+              <a
+                href="#education"
+                onclick="smoothScroll('education'); return false;"
+                >Education</a
+              >
+            </li>
+            <li>
+              <a
+                href="#projects"
+                onclick="smoothScroll('projects'); return false;"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                onclick="smoothScroll('contact'); return false;"
+                >Contact</a
+              >
+            </li>
           </ul>
         </div>
       </nav>
