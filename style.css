@@ -661,10 +661,24 @@ footer p {
   max-height: 100px;
   overflow: hidden;
   transition: max-height 0.3s ease-out;
+  padding-left: 20px; /* Add left padding to make room for bullets */
 }
 
 .collapsible-content.expanded {
   max-height: 1000px; /* Adjust this value based on your content */
+}
+
+.collapsible-content li {
+  position: relative;
+  list-style-type: none; /* Remove default bullets */
+  margin-bottom: 10px; /* Add some space between list items */
+}
+
+.collapsible-content li::before {
+  content: "•"; /* Add custom bullet */
+  position: absolute;
+  left: -20px; /* Position the bullet */
+  color: rgb(85, 85, 85); /* Match your text color */
 }
 
 .toggle-btn {
@@ -675,6 +689,7 @@ footer p {
   font-size: 0.9rem;
   padding: 5px 0;
   text-decoration: underline;
+  margin-top: 10px; /* Add some space above the button */
 }
 
 .toggle-btn:hover {
