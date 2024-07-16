@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">John Doe</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Hruday Tej</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/pfp1.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Hruday Tej Akkaladevi</h1>
+        <p class="section__text__p2">Software Developer | Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/hruday-tej/'"
+          />
+          <span> </span>
+          <span> </span>
+          <span> </span>
+
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/hruday-tej'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="work-experience" class="section">
+      <h1 class="title">Work Experience</h1>
+      <div class="experience-details-container">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">September, 2023 - Present</div>
+              <h3>AI, Backend Developer</h3>
+              <p>i-Heal (Intelligent Health Lab)</p>
+              <ul class="collapsible-content">
+                <li>
+                  Architecting a robust Backend AI Data Pipeline Solution...
+                </li>
+                <li>
+                  Fine-tuned and constructed Retrieval-Augmented Generation
+                  (RAG) systems...
+                </li>
+              </ul>
+              <button class="toggle-btn">See more</button>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">July, 2021 - July, 2023</div>
+              <h3>Software Engineer (Cloud, Devops Engineer)</h3>
+              <p>J.P. Morgan Chase</p>
+              <ul class="collapsible-content">
+                <li>
+                  Led the complete SDLC of a high-impact Big Data Solution...
+                </li>
+                <li>
+                  Engineered critical features, including User Authentication...
+                </li>
+                <li>
+                  Integrated Jenkins with the EMR Controller using Groovy
+                  scripts...
+                </li>
+                <li>
+                  Developed Grafana dashboards and housekeeping utilities...
+                </li>
+                <li>
+                  Provided comprehensive support for enabling the product...
+                </li>
+                <li>
+                  As the Scrum Master and Release Manager, administered...
+                </li>
+              </ul>
+              <button class="toggle-btn">See more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="skills" class="section">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-card">
+        <div class="skills-category">
+          <h2>Languages</h2>
+          <div class="skills-list">
+            <span class="skill-item">Java</span>
+            <span class="skill-item">Python</span>
+            <span class="skill-item">C++</span>
+            <span class="skill-item">Shell Script</span>
+            <span class="skill-item">HTML5/CSS3</span>
+            <span class="skill-item">Javascript</span>
+          </div>
+        </div>
+        <div class="skills-category">
+          <h2>AWS Services</h2>
+          <div class="skills-list">
+            <span class="skill-item">Elastic Map Reduce</span>
+            <span class="skill-item">Lambdas</span>
+            <span class="skill-item">API Gateway</span>
+            <span class="skill-item">Security Groups</span>
+            <span class="skill-item">Load Balancers</span>
+            <span class="skill-item">EC2</span>
+            <span class="skill-item">S3</span>
+            <span class="skill-item">IAM</span>
+            <span class="skill-item">DynamoDB</span>
+            <span class="skill-item">SNS/SQS</span>
+          </div>
+        </div>
+        <div class="skills-category">
+          <h2>Frameworks</h2>
+          <div class="skills-list">
+            <span class="skill-item">SpringBoot</span>
+            <span class="skill-item">.NET</span>
+            <span class="skill-item">Django</span>
+            <span class="skill-item">Flask</span>
+            <span class="skill-item">Flutter</span>
+            <span class="skill-item">ReactJS</span>
+            <span class="skill-item">Android Java</span>
+            <span class="skill-item">NodeJS</span>
+          </div>
+        </div>
+        <div class="skills-category">
+          <h2>Tools/Technologies</h2>
+          <div class="skills-list">
+            <span class="skill-item">Docker</span>
+            <span class="skill-item">Kubernetes</span>
+            <span class="skill-item">Terraform</span>
+            <span class="skill-item">Git</span>
+            <span class="skill-item">Jenkins</span>
+            <span class="skill-item">JIRA</span>
+            <span class="skill-item">SQL</span>
+            <span class="skill-item">NoSQL</span>
+            <span class="skill-item">PostgreSQL</span>
+            <span class="skill-item">MongoDB</span>
+            <span class="skill-item">Grafana</span>
+            <span class="skill-item">REST APIs</span>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <section id="about">
+      <!-- <p class="section__text__p1">Get To Know More</p> -->
+      <!-- <h1 class="title">About Me</h1> -->
+      <div class="section-container">
+        <!-- <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div> -->
+        <div class="about-details-container">
+          <section id="education" class="section">
+            <!-- <p class="section__text__p1">My Academic</p> -->
+            <h1 class="title">Education</h1>
+            <br />
+            <div class="experience-details-container">
+              <div class="education-timeline">
+                <div class="education-item">
+                  <div class="education-dot"></div>
+                  <div class="education-content">
+                    <div class="education-date">Sept, 2023 - Present</div>
+                    <h3>University of Florida</h3>
+                    <p>Master of Science</p>
+                    <p>
+                      <b>Course Work: </b>Natural Language Processing, Machine
+                      Learning Engineer, Analysis of Algorithms, Distributed
+                      Operating Principles, Computer Networks.
+                    </p>
+                  </div>
+                </div>
+                <div class="education-item">
+                  <div class="education-dot"></div>
+                  <div class="education-content">
+                    <div class="education-date">July, 2017 - July, 2021</div>
+                    <h3>Chaitanya Bharathi Institute of Technology</h3>
+                    <p>Bachelors of Engineering</p>
+                    <p>
+                      <b>Course Work: </b> Data Science & Big Data Analytics,
+                      Deep Learning, Machine Learning, Artificial Intelligence,
+                      Distributed Cloud Computing, Probability & Statistics,
+                      IOT.
+                    </p>
+                  </div>
+                </div>
+                <!-- Add more education items as needed -->
+              </div>
+            </div>
+            <img
+              src="./assets/arrow.png"
+              alt="Arrow icon"
+              class="icon arrow"
+              onclick="location.href='./#next-section'"
+            />
+          </section>
+          <br />
+          <div class="text-container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
+              reprehenderit et laborum, rem, dolore eum quod voluptate
+              exercitationem nobis, nihil esse debitis maxime facere minus sint
+              delectus velit in eos quo officiis explicabo deleniti dignissimos.
+              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
+              reiciendis ea magnam? Nulla, impedit fuga!
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- <p>fjfjf</p> -->
+      <img
+        src="./assets/arrsow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Conv-AI Medical Chatbot
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Clinical Text Summarizer
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Single Image Super Resolution
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
