@@ -72,6 +72,10 @@
 
 ###
 
+<div id="header" align="center">
+  <img src="https://komarev.com/ghpvc/?username=sammorozov&style=for-the-badge&color=orange" alt=""/>
+</div>
+
 <br clear="both">
 
 <img src="https://raw.githubusercontent.com/hruday-tej/hruday-tej/output/snake.svg" alt="Snake animation" />
