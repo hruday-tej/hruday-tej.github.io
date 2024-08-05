@@ -73,8 +73,7 @@
 ###
 
 <div id="header" align="center">
-  <img src="https://komarev.com/ghpvc/?username=sammorozov&style=for-the-badge&color=orange" alt=""/>
-</div>
+![](https://api.visitorbadge.io/api/VisitorHit?user=hruday-tej&repo=github-visitors-badge&countColor=%237B1E7A)</div>
 
 <br clear="both">
 
