@@ -73,7 +73,7 @@
 ###
 
 <div id="header" align="center">
-![](https://api.visitorbadge.io/api/VisitorHit?user=hruday-tej&repo=github-visitors-badge&countColor=%237B1E7A)</div>
+<img src="https://api.visitorbadge.io/api/VisitorHit?user=hruday-tej&repo=github-visitors-badge&countColor=%237B1E7A" /></div>
 
 <br clear="both">
 
